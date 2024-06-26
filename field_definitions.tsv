@@ -52,7 +52,7 @@ region	string	default	Park, county, district, lake or river.
 sector	string	default	Sector of park or county/city.
 site	string	default	The name of the sampling location.
 site_code	string	default	A short string representing the sampling location.
-coord	string	default	Latitude & Longitude in decimal degrees (DD) format (e.g. 45.837).
+coord	geopoint	array	Latitude & Longitude in decimal degrees (DD) format (e.g. 45.837).
 coord_accuracy	float	default	Accuracy of coordinate in decimal degrees (DD).
 coord_source	string	default	The source of the coordinates.
 elev	float	default	Elevation of sampling site. Measured in meters relative to sea level. Negative values indicate a position below sea level.
