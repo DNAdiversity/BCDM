@@ -73,6 +73,6 @@ sequence_upload_date	string:date	%Y-%m-%d	Date the sequence was uploaded.
 bold_recordset_code_arr	array	default	A comma separated list of Projects and Datasets on BOLD that this record is associated with.
 ecoregion	string	default	Inferred RESOLVE defined ecoregion based on the collection coordinates.
 biome	string	default	Inferred RESOLVE defined biome based on the collection coordinates.
-realm  string  default  Inferred RESOLVE defined realm based on collection coordinates.
+realm	string	default	Inferred RESOLVE defined realm based on collection coordinates.
 sovereign_inst	string	default	Institution with sovereignty over the physical specimen.
 
