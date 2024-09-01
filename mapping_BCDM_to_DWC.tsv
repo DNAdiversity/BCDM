@@ -51,7 +51,7 @@ region	county	string	default	default	string
 sector	municipality	string	default	default	string
 site	verbatimLocality	string	default	default	string
 site_code	parentEventID	string	default	default	string
-coord	decimalLatitude & decimalLongitude	string	default	default	array
+coord	decimalLatitude & decimalLongitude	geopoint	array	default	array
 coord_accuracy	coordinatePrecision	float	default	default	float
 coord_source	georeferenceSources	string	default	default	string
 elev	verbatimElevation	float	default	default	float
