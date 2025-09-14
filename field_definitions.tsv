@@ -1,79 +1,79 @@
-field	data_type	data_format	definition
-processid	string	default	BOLD System generated unique identifier for the sample being sequenced.
-sampleid	string	default	User generated identifier for the sample being sequenced, often identical to the Field ID or Museum ID.
-fieldid	string	default	Specimen or sample identifier generated in the field or lot number for a bulk collection event.
-museumid	string	default	Catalog number from a museum collection.
-record_id	string	default	A BOLD generated identifier for the marker and specimen sequence combination.
-specimenid	integer	default	BOLD System generated numerical ID associated with the specimen record.
-processid_minted_date	string:date	%Y-%m-%d	Date of record registration on BOLD.
-bin_uri	string	BOLD:%s	The Barcode Index Number (BIN) assigned to the COI sequence.
-bin_created_date	string:date	%Y-%m-%d	Date of BIN creation in BOLD.
-collection_code	string	default	Code associated with a given collection within an institution.
-inst	string	default	Institution storing the physical specimen.
-taxid	number	default	Identifier associated with the taxon assignment.
-kingdom	string	default	Taxonomy: Kingdom.
-phylum	string	default	Taxonomy: Phylum.
-class	string	default	Taxonomy: Class.
-order	string	default	Taxonomy: Order.
-family	string	default	Taxonomy: Family.
-subfamily	string	default	Taxonomy: Subfamily.
-tribe	string	default	Taxonomy: Tribe
-genus	string	default	Taxonomy: Genus.
-species	string	default	Taxonomy: Species.
-subspecies	string	default	Taxonomy: Subspecies.
-species_reference	string	default	Reference for species name/Authorship of the species name.
-identification	string	default	Taxonomic identification of the specimen.
-identification_method	string	default	The method used to identify the specimen.
-identification_rank	string	default	Taxonomic rank of the identification associated with the specimen.
-identified_by	string	default	Full name of primary individual responsible for providing the taxonomic identification of the specimen.
-identifier_email	string	default	Identifier email address.
-taxonomy_notes	string	default	General notes regarding the taxonomy of the specimen.
-sex	char	default	The sex of the specimen registered in the record. This field uses a controlled vocabulary: 'Male', 'female', 'hermaphrodite' only.
-reproduction	string	default	Sexual/asexual/cyclic parthenogen only.
-life_stage	string	default	The age class or life stage of the specimen(s) at the time of sampling. Contolled vocabulary: 'Adult', 'Immature', 'Juvenile', 'Pupa'.
-short_note	string	default	A brief note or term associated with the specimen to add context to the record.
-notes	string	default	Detailed notes regarding the specimen.
-voucher_type	string	default	Status of the specimen in an accessioning process.This field uses a controlled vocabulary: 'Museum Vouchered:Type', 'Museum Vouchered:Type Series', 'Vouchered:Registered Collection', 'To Be Vouchered:Holdup/Private', 'E-Vouchered:DNA/Tissue+Photo', 'Dna/Tissue Vouchered Only', 'No Specimen'.  For type series, use of GBIF's typeStatus vocabulary(https://rs.gbif.org/vocabulary/gbif/type_status.xml) is required.
-tissue_type	string	default	A physical result of a sampling (or subsampling) event. In biological collections, the material sample is typically collected, and either preserved or destructively processed.
-specimen_linkout	string	default	Link to an external resource for the specimen record.
-associated_specimens	string	default	A list (concatenated and comma separated) of other specimens associated with the subject specimen at the time of its collection. References to other specimen identifiers should be preceded by the relationship. Examples: 'host: PLANT23452, prey: USNM45677' when both prey and host specimens have been captured.
-associated_taxa	string	default	A list (concatenated and comma separated) of taxa associated with the specimen at the time of its collection. References to taxa should be preceded by the relationship. Use of this field implies knowledge of an associated specimen where the identification is an inference. Examples: [host: Quercus alba], [prey: caterpillar].
-collectors	string	default	Comma separated list of full or abbreviated names of the individuals or teams responsible for collecting the sample in the field.
-collection_date_start	string:date	%Y-%m-%d	The start date for the associated collecting event.
-collection_date_end	string:date	%Y-%m-%d	The end date for the associated collecting event. 
-collection_event_id	string	default	An identifier for the set of information associated with an Event (something that occurs at a place and time). May be a global unique identifier or an identifier specific to the data set.
-collection_time	string	default	The time or time of day during which the sample was collected.
-collection_notes	string	default	Comments or notes about the collection event.
-geoid	integer	default	Unique identifier assigned to the most detailed or specific geographic division available, either country/ocean or province/state.
-country/ocean	string	default	The full, unabbreviated name of the country, major political unit, or ocean.
-country_iso	string	default	Country ISO 3166-1 Alpha-2 code.
-province/state	string	default	The full, unabbreviated name of the state, province, territory, or prefecture within the given country.
-region	string	default	Park, county, district, lake or river.
-sector	string	default	Sector of park or county/city.
-site	string	default	The name of the sampling location.
-site_code	string	default	A short string representing the sampling location.
-coord	geopoint	array	Latitude & Longitude in decimal degrees (DD) format (e.g. 45.837).
-coord_accuracy	float	default	Accuracy of coordinate in decimal degrees (DD).
-coord_source	string	default	The source of the coordinates.
-elev	float	default	Elevation of sampling site. Measured in meters relative to sea level. Negative values indicate a position below sea level.
-elev_accuracy	float	default	Accuracy of the elevation value in meters.
-depth	float	default	For organisms collected beneath the surface of a water body. Measured in meters below the surface of water.
-depth_accuracy	float	default	The accuracy of the depth value in meters.
-habitat	string	default	A category or description of the habitat.
-sampling_protocol	string	default	The names of, references to, or descriptions of the methods or protocols used to capture the associated specimen.
-nuc	string	default	Nucleotide sequence as submitted.
-nuc_basecount	integer	default	Count of IUPAC non-degenerate nucleotide symbols. 
-insdc_acs	string	default	Accession number assigned to a sequence upon its deposition in one of the databases affiliated with the International Nucleotide Sequence Database Collaboration, 'www.insdc.org'.
-funding_src	string	default	Source of funding for data generation, curation, and publication.
-marker_code	string	default	Short code associated with the sequenced marker(gene).
-primers_forward	array	default	A comma separated list of forward primer code and sequence pairs, with each code and sequence separated by a colon.
-primers_reverse	array	default	A comma separated list of reverse primer code and sequence pairs, with each code and sequence separated by a colon.
-sequence_run_site	string	default	Full name of the institution where sequencing was performed or the database the sequence was retrieved from.
-sequence_upload_date	string:date	%Y-%m-%d	Date the sequence was uploaded.
-bold_recordset_code_arr	array	default	A comma separated list of Projects and Datasets on BOLD that this record is associated with.
-ecoregion	string	default	Inferred RESOLVE defined ecoregion based on the collection coordinates.
-biome	string	default	Inferred RESOLVE defined biome based on the collection coordinates.
-realm	string	default	inferred RESOLVE defined realm based on collection coordinates.
-sovereign_inst	string	default	Institution with sovereignty over the physical specimen.
-created_at	string:date	%Y-%m-%d	The date when the record was first created in the database in GMT (UTC+0).
-updated_at	string:date	%Y-%m-%d	The date when the record was last modified in the database in GMT (UTC+0).
+field	data_type	data_format	bold:field_group	definition
+processid	string	default	specimen	BOLD System generated unique identifier for the sample being sequenced.
+sampleid	string	default	specimen	User generated identifier for the sample being sequenced, often identical to the Field ID or Museum ID.
+fieldid	string	default	specimen	Specimen or sample identifier generated in the field or lot number for a bulk collection event.
+museumid	string	default	specimen	Catalog number from a museum collection.
+record_id	string	default	specimen	A BOLD generated identifier for the marker and specimen sequence combination.
+specimenid	integer	default	specimen	BOLD System generated numerical ID associated with the specimen record.
+processid_minted_date	string:date	%Y-%m-%d	specimen	Date of record registration on BOLD.
+bin_uri	string	BOLD:%s	taxonomy	The Barcode Index Number (BIN) assigned to the COI sequence.
+bin_created_date	string:date	%Y-%m-%d	taxonomy	Date of BIN creation in BOLD.
+collection_code	string	default	collection	Code associated with a given collection within an institution.
+inst	string	default	specimen	Institution storing the physical specimen.
+taxid	number	default	taxonomy	Identifier associated with the taxon assignment.
+kingdom	string	default	taxonomy	Taxonomy: Kingdom.
+phylum	string	default	taxonomy	Taxonomy: Phylum.
+class	string	default	taxonomy	Taxonomy: Class.
+order	string	default	taxonomy	Taxonomy: Order.
+family	string	default	taxonomy	Taxonomy: Family.
+subfamily	string	default	taxonomy	Taxonomy: Subfamily.
+tribe	string	default	taxonomy	Taxonomy: Tribe
+genus	string	default	taxonomy	Taxonomy: Genus.
+species	string	default	taxonomy	Taxonomy: Species.
+subspecies	string	default	taxonomy	Taxonomy: Subspecies.
+species_reference	string	default	taxonomy	Reference for species name/Authorship of the species name.
+identification	string	default	taxonomy	Taxonomic identification of the specimen.
+identification_method	string	default	taxonomy	The method used to identify the specimen.
+identification_rank	string	default	taxonomy	Taxonomic rank of the identification associated with the specimen.
+identified_by	string	default	taxonomy	Full name of primary individual responsible for providing the taxonomic identification of the specimen.
+identifier_email	string	default	taxonomy	Identifier email address.
+taxonomy_notes	string	default	taxonomy	General notes regarding the taxonomy of the specimen.
+sex	char	default	specimen	The sex of the specimen registered in the record. This field uses a controlled vocabulary: 'Male', 'female', 'hermaphrodite' only.
+reproduction	string	default	specimen	Sexual/asexual/cyclic parthenogen only.
+life_stage	string	default	specimen	The age class or life stage of the specimen(s) at the time of sampling. Contolled vocabulary: 'Adult', 'Immature', 'Juvenile', 'Pupa'.
+short_note	string	default	specimen	A brief note or term associated with the specimen to add context to the record.
+notes	string	default	specimen	Detailed notes regarding the specimen.
+voucher_type	string	default	collection	Status of the specimen in an accessioning process.This field uses a controlled vocabulary: 'Museum Vouchered:Type', 'Museum Vouchered:Type Series', 'Vouchered:Registered Collection', 'To Be Vouchered:Holdup/Private', 'E-Vouchered:DNA/Tissue+Photo', 'Dna/Tissue Vouchered Only', 'No Specimen'.  For type series, use of GBIF's typeStatus vocabulary(https://rs.gbif.org/vocabulary/gbif/type_status.xml) is required.
+tissue_type	string	default	collection	A physical result of a sampling (or subsampling) event. In biological collections, the material sample is typically collected, and either preserved or destructively processed.
+specimen_linkout	string	default	specimen	Link to an external resource for the specimen record.
+associated_specimens	string	default	specimen	A list (concatenated and comma separated) of other specimens associated with the subject specimen at the time of its collection. References to other specimen identifiers should be preceded by the relationship. Examples: 'host: PLANT23452, prey: USNM45677' when both prey and host specimens have been captured.
+associated_taxa	string	default	specimen	A list (concatenated and comma separated) of taxa associated with the specimen at the time of its collection. References to taxa should be preceded by the relationship. Use of this field implies knowledge of an associated specimen where the identification is an inference. Examples: [host: Quercus alba], [prey: caterpillar].
+collectors	string	default	collection	Comma separated list of full or abbreviated names of the individuals or teams responsible for collecting the sample in the field.
+collection_date_start	string:date	%Y-%m-%d	collection	The start date for the associated collecting event.
+collection_date_end	string:date	%Y-%m-%d	collection	The end date for the associated collecting event. 
+collection_event_id	string	default	collection	An identifier for the set of information associated with an Event (something that occurs at a place and time). May be a global unique identifier or an identifier specific to the data set.
+collection_time	string	default	collection	The time or time of day during which the sample was collected.
+collection_notes	string	default	collection	Comments or notes about the collection event.
+geoid	integer	default	collection	Unique identifier assigned to the most detailed or specific geographic division available, either country/ocean or province/state.
+country/ocean	string	default	collection	The full, unabbreviated name of the country, major political unit, or ocean.
+country_iso	string	default	collection	Country ISO 3166-1 Alpha-2 code.
+province/state	string	default	collection	The full, unabbreviated name of the state, province, territory, or prefecture within the given country.
+region	string	default	collection	Park, county, district, lake or river.
+sector	string	default	collection	Sector of park or county/city.
+site	string	default	collection	The name of the sampling location.
+site_code	string	default	collection	A short string representing the sampling location.
+coord	geopoint	array	collection	Latitude & Longitude in decimal degrees (DD) format (e.g. 45.837).
+coord_accuracy	float	default	collection	Accuracy of coordinate in decimal degrees (DD).
+coord_source	string	default	collection	The source of the coordinates.
+elev	float	default	collection	Elevation of sampling site. Measured in meters relative to sea level. Negative values indicate a position below sea level.
+elev_accuracy	float	default	collection	Accuracy of the elevation value in meters.
+depth	float	default	collection	For organisms collected beneath the surface of a water body. Measured in meters below the surface of water.
+depth_accuracy	float	default	collection	The accuracy of the depth value in meters.
+habitat	string	default	collection	A category or description of the habitat.
+sampling_protocol	string	default	specimen	The names of, references to, or descriptions of the methods or protocols used to capture the associated specimen.
+nuc	string	default	sequence	Nucleotide sequence as submitted.
+nuc_basecount	integer	default	sequence	Count of IUPAC non-degenerate nucleotide symbols. 
+insdc_acs	string	default	sequence	Accession number assigned to a sequence upon its deposition in one of the databases affiliated with the International Nucleotide Sequence Database Collaboration, 'www.insdc.org'.
+funding_src	string	default	sequence	Source of funding for data generation, curation, and publication.
+marker_code	string	default	sequence	Short code associated with the sequenced marker(gene).
+primers_forward	array	default	sequence	A comma separated list of forward primer code and sequence pairs, with each code and sequence separated by a colon.
+primers_reverse	array	default	sequence	A comma separated list of reverse primer code and sequence pairs, with each code and sequence separated by a colon.
+sequence_run_site	string	default	sequence	Full name of the institution where sequencing was performed or the database the sequence was retrieved from.
+sequence_upload_date	string:date	%Y-%m-%d	sequence	Date the sequence was uploaded.
+bold_recordset_code_arr	array	default	identifier	A comma separated list of Projects and Datasets on BOLD that this record is associated with.
+ecoregion	string	default	collection	Inferred RESOLVE defined ecoregion based on the collection coordinates.
+biome	string	default	collection	Inferred RESOLVE defined biome based on the collection coordinates.
+realm	string	default	collection	inferred RESOLVE defined realm based on collection coordinates.
+sovereign_inst	string	default	identifier	Institution with sovereignty over the physical specimen.
+created_at	string:date	%Y-%m-%d	identifier	The date when the record was first created in the database in GMT (UTC+0).
+updated_at	string:date	%Y-%m-%d	identifier	The date when the record was last modified in the database in GMT (UTC+0).
