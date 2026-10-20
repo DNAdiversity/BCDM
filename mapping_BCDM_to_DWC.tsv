@@ -27,7 +27,7 @@ identification_method	identificationRemarks	string	default	default	string
 identification_rank		string	default		
 identified_by	identifiedBy	string	default	default	string
 taxonomy_notes		string	default		
-sex	sex	char	default	{"M":"male","F":"female","H":"hermaphrodite"}	string
+sex	sex	char	default	{'M':'male','F':'female','H':'hermaphrodite'}	string
 reproduction		string	default		
 life_stage	lifeStage	string	default	default	string
 short_note	occurrenceRemarks	string	default	default	string
