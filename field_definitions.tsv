@@ -26,7 +26,7 @@ identification	string	default	taxonomy	Taxonomic identification of the specimen.
 identification_method	string	default	taxonomy	The method used to identify the specimen.
 identification_rank	string	default	taxonomy	Taxonomic rank of the identification associated with the specimen.
 identified_by	string	default	taxonomy	Full name of primary individual responsible for providing the taxonomic identification of the specimen.
-identifier_email	string	default	taxonomy	Identifier email address.
+identified_by_digital_id	string	default	taxonomy	Digital ID of the individual, organization, or entity providing the identification.
 verified_by	string	default	taxonomy	Full name of primary individual responsible for validating the taxonomic identification of the specimen relative to the sequence.
 verifier_email	string	default	taxonomy	Identifier email address.
 verification_method	string	default	taxonomy	The method used to verify the identity the specimen relative to the sequence.
