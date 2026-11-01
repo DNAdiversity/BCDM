@@ -1,0 +1,15 @@
+# Claude Code / AI assistant files
+CLAUDE.md
+CLAUDE.local.md
+claude.md
+.claude/
+.claude*
+.mcp.json
+tasks/
+.cursorrules
+.cursor/
+AGENTS.md
+
+# OS files
+.DS_Store
+Thumbs.db
